@@ -164,6 +164,7 @@ header .sign #bx-sign-up {
 
 .home .content .text {
     flex: 1 1 45rem;
+    border: 1px solid red;
 }
 
 .home .content .text h3 {
@@ -212,6 +213,7 @@ header .sign #bx-sign-up {
 
 .home .content .image {
     flex: 1 1 45rem;
+    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +229,22 @@ header .sign #bx-sign-up {
     width: 55rem;
     /* border: .2rem solid rgba(0, 0, 0, 0.2); */
     border-radius: 50%;
+}
+
+.home .content .image img {
+    /* padding-top: 5rem; */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.home .brand {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .categories{
@@ -259,34 +277,78 @@ header .sign #bx-sign-up {
     border-radius: 50%;
     background-color: var(--purple);
     color: var(--white);
-    margin-bottom: 2rem 0;
+    margin: 2rem 0;
     font-weight: 500;
+
 }
 
 .categories .card-container .card h3{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 600;
 }
 
 .categories .card-container .card p{
     margin: .5rem 5rem;
+    font-size: 1.3rem;
 }
 
-.home .content .image img {
-    /* padding-top: 5rem; */
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    /* border-radius: 50%; */
-    object-fit: cover;
+
+.student{
+    background: linear-gradient(137deg, rgba(139, 67, 255, 0.35) 0%, rgba(221, 208, 242, 0.18) 99.97%, rgba(116, 39, 241, 0.00) 99.98%, rgba(109, 70, 172, 0.10) 100%);
 }
 
-.home .brand {
+.student .student-content{
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+.student .student-content .student-image{
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student .student-content .student-image .img-parent{
+    height: 45rem;
+    width: 45rem;
+}
+
+.student .student-content .student-image .img-child{
+    background: var(--purple);
+    border-radius: 50%;
+    position: relative;
+    border: 1rem solid #E7D8FF;
+    height: 20rem;
+    width: 20rem;
+    top: 3rem;
+    right: 7rem;
+    object-fit: cover;
+    z-index: 50;
+}
+
+
+
+.student .student-content .student-text{
+    flex: 1 1 45rem;
+}
+
+
+.student .student-content .student-text h3{
+    font-size: 5rem;
+    line-height: 1.4;
+    font-weight: 550;
+}
+
+.student .student-content .student-text p{
+    font-size: 1.7rem;
+    color: var(--text-light);
+    line-height: 1.4;
+    padding: 3rem 0;
+}
+
+
 
 
 @media (max-width: 991px) {
@@ -350,6 +412,13 @@ header .sign #bx-sign-up {
 
     .home .brand {
         flex-direction: column;
+    }
+
+    .categories .card-container{
+        margin-top: 5rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     }
 }
 
