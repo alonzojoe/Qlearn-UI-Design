@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QLearn</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <header>
       <a href="" class="logo">
-        <img src="./assets/images/grad hat.svg"> 
+        <img src="./assets/images/grad hat.svg" />
         QLearn
       </a>
 
@@ -21,36 +24,111 @@
         <a href="#">Testimonials</a>
       </div>
 
-      <div class="icons">
-        <a href=""></a>
-      </div>
-
       <div class="sign">
-        <a class="btn-light">Sign up</a>
-        <a class="btn-dark">Login</a>
+        <i class="bx bx-menu" id="menu-bars"></i>
+        <i class="bx bx-log-in" id="bx-sign-up"></i>
+        <a class="btn-light" id="sign-up">Sign up</a>
+        <a class="btn-dark" id="log-in">Login</a>
       </div>
     </header>
 
     <section class="home" id="home">
-        <div class="content">
-            <div class="text">
-                <h3>Embark on a Delightful Journey of Growth with</h3>
-                <h3>Online Learning</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo quaerat, eveniet, incidunt hic qui blanditiis natus labore ad laudantium dolore pariatur placeat quas! Aperiam illo tempore quasi perferendis aut!</p>
-                <input type="text" class="text">
-            </div>
-            <div class="image">
-                
-                <img src="./assets/images/student.png" alt="">
+      <div class="content">
+        <div class="text">
+          <h3>Embark on a Delightful Journey of Growth with</h3>
+          <h4>Online Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            explicabo quaerat, eveniet.
+          </p>
+          <div class="text-group">
+            <input type="text" class="input-text" placeholder="Search your favorite course..."/>
+            <i class='bx bx-search-alt-2 search-icon'></i>
+          </div>
+      
+        </div>
+        <div class="image">
+            <div class="img-container">
+                <img src="./assets/images/student.png" alt="" />
             </div>
         </div>
-        <div class="brand">
-            <span class="img"><img src="./assets/images/Amstrad-Logo.wine 1 (2).png"></span>
-            <span class="img"><img src="./assets/images/Airbus_Defence_and_Space-Logo.wine 1.png"></span>
-            <span class="img"><img src="./assets/images/Sophos-Logo.wine 1.png"></span>
-            <span class="img"><img src="./assets/images/accelyrs.png"></span>
-            <span class="img"><img src="./assets/images/Aveva-Logo.wine 1.svg"></span>
+      </div>
+      <div class="brand">
+        <span class="img"
+          ><img src="./assets/images/Amstrad-Logo.wine 1 (2).png"
+        /></span>
+        <span class="img"
+          ><img src="./assets/images/Airbus_Defence_and_Space-Logo.wine 1.png"
+        /></span>
+        <span class="img"
+          ><img src="./assets/images/Sophos-Logo.wine 1.png"
+        /></span>
+        <span class="img"><img src="./assets/images/accelyrs.png" /></span>
+        <span class="img"
+          ><img src="./assets/images/Aveva-Logo.wine 1.svg"
+        /></span>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="heading">
+            <h3>Popular Categories</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam inventore voluptatem provident labore error quaera.</p>
         </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="icon-container">
+                    <i class='bx bx-desktop'></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur id ipsum eveniet magni consequuntur.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-container">
+                    <i class='bx bx-code-block'></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur id ipsum eveniet magni consequuntur.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-container">
+                    <i class='bx bx-store-alt'></i>
+                </div>
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur id ipsum eveniet magni consequuntur, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-container">
+                    <i class='bx bx-file-blank' ></i>
+                </div>
+                <h3>Data Entry</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur id ipsum eveniet magni consequuntur, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-container">
+                    <i class='bx bx-desktop'></i>
+                </div>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur id ipsum eveniet magni consequuntur, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-container">
+                    <i class='bx bx-code-block'></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur id ipsum eveniet magni consequuntur, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+
+        </div>
+
     </section>
 
     <script src="./assets/main.js"></script>
