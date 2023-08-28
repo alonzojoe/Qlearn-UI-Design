@@ -24,6 +24,7 @@ html {
     --text-light: #6A6B6C;
     --text-black: #07152F;
     --white: #FFFFFF;
+    --yellow: #ECC128;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     --bg-purple-gradient: background: linear-gradient(137deg, rgba(139, 67, 255, 0.35) 0%, rgba(221, 208, 242, 0.18) 99.97%, rgba(116, 39, 241, 0.00) 99.98%, rgba(109, 70, 172, 0.10) 100%);
 
@@ -47,6 +48,7 @@ section {
     font-size: 1.7rem;
     padding: 1.5rem 0;
     line-height: 1.5;
+    margin-bottom: 2rem;
 }
 
 
@@ -329,39 +331,6 @@ header .sign #bx-sign-up {
     z-index: 50;
 }
 
-.course{
-    padding-top: 5rem;
-}
-
-.course .course-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-    gap: 1.5rem;
-}
-
-.course .course-container .card-course{
-    border-radius: 25px;
-    
-}
-
-.course .course-container .card-course img{
-    border-radius: 25px 25px 0px 0px;
-    width: 25rem;
-    width: 25rem;
-}
-
-.course .course-container .card-course span{
-    background: var(--purple);
-    color: var(--white);
-    height: 4.5rem;
-    width: 4.5rem;
-    text-align: center;
-    line-height: 4.5rem;
-    font-size: 1.2rem;
-    border-radius: 50%;
-}
-
-
 
 .student .student-content .student-text{
     flex: 1 1 45rem;
@@ -379,6 +348,75 @@ header .sign #bx-sign-up {
     color: var(--text-light);
     line-height: 1.4;
     padding: 3rem 0;
+}
+
+.course{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.course .course-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course .course-container .card-course{
+    border-radius: 25px;
+    text-align: center;
+    object-fit: cover;
+    border: .2rem solid rgba(0, 0, 0, 0.10);
+}
+
+.course .course-container .card-course img{
+    border-radius: 25px 25px 0px 0px;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.course .course-container .card-course .price{
+    position: relative;
+    top: -2.6rem;
+    left: 43rem;
+    background: var(--purple);
+    color: var(--white);
+    height: 5.5rem;
+    width: 5.5rem;
+    text-align: center;
+    line-height: 5.5rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-weight: 400;
+    border: .2rem solid #fff;
+}
+
+
+.course .course-container .card-course h4{
+    font-size: 2rem;
+    padding: 1.4rem 0;
+    font-weight: 500;
+}
+
+.course .course-container .card-course .ratings{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course .course-container .card-course .ratings .container i{
+    color: var(--yellow);
+    font-size: 2rem;
+}
+
+.course .course-container .card-course .ratings .text-rating{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.course .course-container .card-course a{
+    margin: 2rem;
 }
 
 
@@ -404,10 +442,15 @@ header .sign #bx-sign-up {
         gap: 1.5rem;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
+
+    .course .course-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 @media (max-width:768px) {
-
+    
     header .sign #menu-bars {
         display: inline-block;
     }
@@ -454,6 +497,10 @@ header .sign #bx-sign-up {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    }
+
+    .course .course-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
