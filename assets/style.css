@@ -164,7 +164,6 @@ header .sign #bx-sign-up {
 
 .home .content .text {
     flex: 1 1 45rem;
-    border: 1px solid red;
 }
 
 .home .content .text h3 {
@@ -213,7 +212,6 @@ header .sign #bx-sign-up {
 
 .home .content .image {
     flex: 1 1 45rem;
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,6 +254,7 @@ header .sign #bx-sign-up {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    padding-bottom: 5rem;
 }
 
 .categories .card-container .card{
@@ -294,6 +293,8 @@ header .sign #bx-sign-up {
 
 
 .student{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background: linear-gradient(137deg, rgba(139, 67, 255, 0.35) 0%, rgba(221, 208, 242, 0.18) 99.97%, rgba(116, 39, 241, 0.00) 99.98%, rgba(109, 70, 172, 0.10) 100%);
 }
 
@@ -328,6 +329,38 @@ header .sign #bx-sign-up {
     z-index: 50;
 }
 
+.course{
+    padding-top: 5rem;
+}
+
+.course .course-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 1.5rem;
+}
+
+.course .course-container .card-course{
+    border-radius: 25px;
+    
+}
+
+.course .course-container .card-course img{
+    border-radius: 25px 25px 0px 0px;
+    width: 25rem;
+    width: 25rem;
+}
+
+.course .course-container .card-course span{
+    background: var(--purple);
+    color: var(--white);
+    height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
 
 
 .student .student-content .student-text{
@@ -347,6 +380,8 @@ header .sign #bx-sign-up {
     line-height: 1.4;
     padding: 3rem 0;
 }
+
+
 
 
 
