@@ -377,8 +377,8 @@ header .sign #bx-sign-up {
 
 .course .course-container .card-course .price{
     position: relative;
-    top: -2.6rem;
-    left: 43rem;
+    margin-left: 1.7rem;
+    top: -34px;
     background: var(--purple);
     color: var(--white);
     height: 5.5rem;
@@ -419,35 +419,6 @@ header .sign #bx-sign-up {
     margin: 2rem;
 }
 
-
-
-
-
-
-@media (max-width: 991px) {
-    html {
-        font-size: 55%;
-    }
-
-    header {
-        padding: 1rem 2rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-
-    .home .brand {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    }
-
-    .course .course-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-}
 
 .footer{
     background: var(--purple);
@@ -523,6 +494,36 @@ header .sign #bx-sign-up {
     font-size: 2rem;
     font-weight: 400;
     margin: 3rem 0;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home .brand {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .items-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course .course-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 
