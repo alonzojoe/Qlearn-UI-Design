@@ -449,6 +449,83 @@ header .sign #bx-sign-up {
     
 }
 
+.footer{
+    background: var(--purple);
+}
+
+.footer .items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15rem;
+    color: var(--white);
+    margin: 9rem 0;
+}
+
+.footer .items-container .items{
+    width: 100%;
+}
+
+
+.footer .items-container .items a{
+    color: var(--white);
+}
+
+.footer .items-container .items .title{
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.footer .items-container .items .sub-title{
+    font-size: 2rem;
+    font-weight: 650;
+    margin-bottom: 1rem;
+}
+
+.footer .items-container .items img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: .7rem;
+}
+
+.footer .items-container .items .media{
+    display: flex;
+    align-items: center;
+}
+
+.footer .credit {
+    border-top: .2rem solid #fff;
+    text-align: center;
+    color: #fff;
+    padding: 3rem;
+    margin: 0 15rem;
+    font-size: 1.7rem;
+}
+
+
+.footer .items-container .items i{
+    cursor: pointer;
+    height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: var(--purple);
+    background: var(--white);
+}
+
+.footer .items-container .items a{
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 3rem 0;
+}
+
+
 @media (max-width:768px) {
     
     header .sign #menu-bars {
